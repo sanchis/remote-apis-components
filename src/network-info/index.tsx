@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'preact'
+import { FC } from 'react'
 import { useRequest } from '../hooks/useRequest'
 import { NetworkInfoDataDisplay } from './data'
 import { NetworkInfoSkeleton } from './skeleton'
@@ -32,15 +32,10 @@ export interface ResultIpInformation {
   hostname: string
 }
 
-export const NetworkInfo: FunctionComponent = () => {
-  const { requesting, result } = useRequest<ResultIpInformation>('https://ipapi.co/json/')
-
+const NetworkInfo: FC = () => {
   return (
-    <>
-      <div class='flex flex-wrap border text-white border-blue-300 shadow rounded-md p-4 bg-gradient-to-r from-cyan-500 to-blue-500'>
-        {requesting ? NetworkInfoSkeleton : <NetworkInfoDataDisplay result={result as ResultIpInformation} />}
-      </div>
-      <div />
-    </>
+    <p>Hola</p>
   )
 }
+
+export default NetworkInfo
