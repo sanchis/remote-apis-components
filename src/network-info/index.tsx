@@ -33,8 +33,12 @@ export interface ResultIpInformation {
 }
 
 const NetworkInfo: FC = () => {
+  const { requesting, result } = useRequest<ResultIpInformation>('https://ipapi.co/json/')
+
   return (
-    <p>Hola</p>
+    <div className='flex flex-wrap border text-white border-blue-300 shadow rounded-md p-4 bg-gradient-to-r from-cyan-500 to-blue-500'>
+      {requesting ? <NetworkInfoSkeleton /> : <NetworkInfoDataDisplay result={result as ResultIpInformation} />}
+    </div>
   )
 }
 
