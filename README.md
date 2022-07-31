@@ -1,26 +1,8 @@
 <div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
+<!-- <img src="https://img.shields.io/github/contributors/sanchis/remote-apis-components?style=for-the-badge" />
+<img src="https://img.shields.io/github/issues/sanchis/remote-apis-components?style=for-the-badge" /> -->
 
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -90,14 +72,14 @@ TBD
 <!-- ROADMAP -->
 ## Roadmap
 
-- [] Add module federation
-- [-] Components to use
+- [ ] Add module federation
+- [ ] Components to use
     - [x] Add Ip information component
-    - [] Add wheather api component
-    - [] Random pokemon component
-    - [] Currency exchange component
-    - [] Random movie selector component
-    - [] Covid stats based on your location
+    - [ ] Add wheather api component
+    - [ ] Random pokemon component
+    - [ ] Currency exchange component
+    - [ ] Random movie selector component
+    - [ ] Covid stats based on your location
 
 
 
