@@ -5,7 +5,7 @@ const deps = require('./package.json').dependencies
 /** @type {import('webpack').Configuration} */
 module.exports = {
   output: {
-    publicPath: 'http://localhost:3000/'
+    publicPath: 'https://sanchis.github.io/remote-apis-components/'
   },
 
   resolve: {
