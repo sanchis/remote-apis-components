@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "scripts": {
     "build": "webpack --mode production",
-    "build:styles": "postcss src/index.scss -o src/network-info.css",
     "build:dev": "webpack --mode development",
     "build:start": "cd dist && PORT=3000 npx serve",
     "start": "webpack serve --open --mode development",

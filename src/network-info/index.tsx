@@ -2,7 +2,6 @@ import { FC } from 'react'
 import { useRequest } from '../hooks/useRequest'
 import { NetworkInfoDataDisplay } from './data'
 import { NetworkInfoSkeleton } from './skeleton'
-import styles from './networkInfo.module.css'
 export interface ResultIpInformation {
   ip: string
   version: string
@@ -36,7 +35,7 @@ const NetworkInfo: FC = () => {
   const { requesting, result } = useRequest<ResultIpInformation>('https://ipapi.co/json/')
 
   return (
-    <div className={styles.networkinfo}>
+    <div className='flex flex-wrap p-4 text-white border border-blue-300 rounded-md shadow bg-gradient-to-r from-cyan-500 to-blue-500'>
       {requesting ? <NetworkInfoSkeleton /> : <NetworkInfoDataDisplay result={result as ResultIpInformation} />}
     </div>
   )
